@@ -9,6 +9,10 @@ const JugadoresSchema = new Schema({
     type: "string",
     required: [true, "La posición del jugador es obligatoria"],
   },
+  playerImgProfile: {
+    type: "string",
+    required: [true, "La imagen del jugador es obligatoria"],
+  },
 });
 
 module.exports = model("Jugador", JugadoresSchema);
